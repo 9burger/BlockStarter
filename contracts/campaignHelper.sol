@@ -1,8 +1,8 @@
 pragma solidity >=0.5.0 <0.6.0;
 
-import "./CampaignFeeding.sol";
+import "./campaignfeeding.sol";
 
-contract campaignHelper is CampaignFeeding {
+contract CampaignHelper is CampaignFeeding {
 
     uint levelUpFee = 0.001 ether;
 

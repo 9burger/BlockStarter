@@ -1,6 +1,6 @@
 pragma solidity >=0.5.0 <0.6.0;
 
-import "./Campaignfactory.sol";
+import "./campaignfactory.sol";
 
 contract KittyInterface {
     function getKitty(uint256 _id) external view returns (
@@ -17,7 +17,7 @@ contract KittyInterface {
     );
 }
 
-contract CampaignFeeding is Campaignfactory {
+contract CampaignFeeding is CampaignFactory {
 
     KittyInterface kittyContract;
 
