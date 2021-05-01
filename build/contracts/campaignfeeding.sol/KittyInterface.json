@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
   "contractName": "KittyInterface",
-  "sourceName": "contracts/zombiefeeding.sol",
+  "sourceName": "contracts/campaignfeeding.sol",
   "abi": [
     {
       "constant": true,
