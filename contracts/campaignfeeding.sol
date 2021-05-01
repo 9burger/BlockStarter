@@ -1,6 +1,6 @@
 pragma solidity >=0.5.0 <0.6.0;
 
-import "./zombiefactory.sol";
+import "./campaignfactory.sol";
 
 contract KittyInterface {
     function getKitty(uint256 _id) external view returns (
@@ -17,12 +17,12 @@ contract KittyInterface {
     );
 }
 
-contract ZombieFeeding is ZombieFactory {
+contract CampaignFeeding is CampaignFactory {
 
     KittyInterface kittyContract;
 
-    modifier onlyOwnerOf(uint _zombieId) {
-        require(msg.sender == zombieToOwner[_zombieId]);
+    modifier onlyOwnerOf(uint _campaignId) {
+        require(msg.sender == campaignToOwner[_campaignId]);
         _;
     }
 
@@ -30,31 +30,31 @@ contract ZombieFeeding is ZombieFactory {
         kittyContract = KittyInterface(_address);
     }
 
-    function _triggerCooldown(Zombie storage _zombie) internal {
-        _zombie.readyTime = uint32(now + cooldownTime);
+    function _triggerCooldown(Campaign storage _campaign) internal {
+        _campaign.readyTime = uint32(now + cooldownTime);
     }
 
-    function _isReady(Zombie storage _zombie) internal view returns (bool) {
-        return (_zombie.readyTime <= now);
+    function _isReady(Campaign storage _campaign) internal view returns (bool) {
+        return (_campaign.readyTime <= now);
     }
 
-    function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species) internal onlyOwnerOf(_zombieId) {
-        Zombie storage myZombie = zombies[_zombieId];
-        require(_isReady(myZombie));
+    function feedAndMultiply(uint _campaignId, uint _targetDna, string memory _species) internal onlyOwnerOf(_campaignId) {
+        Campaign storage myCampaign = campaigns[_campaignId];
+        require(_isReady(myCampaign));
         _targetDna = _targetDna % dnaModulus;
-        uint newDna = (myZombie.dna + _targetDna) / 2;
+        uint newDna = (myCampaign.dna + _targetDna) / 2;
         if (keccak256(abi.encodePacked(_species)) == keccak256(abi.encodePacked("kitty"))) {
             newDna = newDna - newDna % 100 + 99;
         }
-        _createZombie("NoName", newDna);
-        _triggerCooldown(myZombie);
+        _createCampaign("NoName", newDna);
+        _triggerCooldown(myCampaign);
     }
 
-    function feedOnKitty(uint _zombieId, uint _kittyId) public {
+    function feedOnKitty(uint _campaignId, uint _kittyId) public {
         //  temporary kluge to use random DNA because can't call MAINNET from RINKEBY
         uint kittyDna;
         //(,,,,,,,,,kittyDna) = kittyContract.getKitty(_kittyId);  // the real code
         kittyDna = uint(keccak256(abi.encodePacked(_kittyId))); // the kluge
-        feedAndMultiply(_zombieId, kittyDna, "kitty");
+        feedAndMultiply(_campaignId, kittyDna, "kitty");
     }
 }

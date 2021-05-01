@@ -1,4 +1,4 @@
-import CryptoZombiesContract from "../contract_ABI/CryptoZombies.sol/CryptoZombies.json";
+import BlockStarterContract from "../contract_ABI/BlockStarter.sol/BlockStarter.json";
 import store from "../redux/store";
 import { ethers } from "ethers";
 
@@ -43,7 +43,7 @@ const initBlockchain = async () => {
 
     let CZ = null;
     console.log("READ ABI");
-    //const abi = JSON.parse(CryptoZombiesContract.abi);
+    //const abi = JSON.parse(CryptoCampaignsContract.abi);
     const abi = JSON.parse("[\n" +
         "    {\n" +
         "      \"constant\": false,\n" +
@@ -67,7 +67,7 @@ const initBlockchain = async () => {
         "      \"constant\": false,\n" +
         "      \"inputs\": [\n" +
         "        {\n" +
-        "          \"name\": \"_zombieId\",\n" +
+        "          \"name\": \"_campaignId\",\n" +
         "          \"type\": \"uint256\"\n" +
         "        }\n" +
         "      ],\n" +
@@ -81,7 +81,7 @@ const initBlockchain = async () => {
         "      \"constant\": false,\n" +
         "      \"inputs\": [\n" +
         "        {\n" +
-        "          \"name\": \"_zombieId\",\n" +
+        "          \"name\": \"_campaignId\",\n" +
         "          \"type\": \"uint256\"\n" +
         "        },\n" +
         "        {\n" +
@@ -103,7 +103,7 @@ const initBlockchain = async () => {
         "          \"type\": \"uint256\"\n" +
         "        }\n" +
         "      ],\n" +
-        "      \"name\": \"zombies\",\n" +
+        "      \"name\": \"campaigns\",\n" +
         "      \"outputs\": [\n" +
         "        {\n" +
         "          \"name\": \"name\",\n" +
@@ -173,7 +173,7 @@ const initBlockchain = async () => {
         "          \"type\": \"address\"\n" +
         "        }\n" +
         "      ],\n" +
-        "      \"name\": \"getZombiesByOwner\",\n" +
+        "      \"name\": \"getCampaignsByOwner\",\n" +
         "      \"outputs\": [\n" +
         "        {\n" +
         "          \"name\": \"\",\n" +
@@ -192,7 +192,7 @@ const initBlockchain = async () => {
         "          \"type\": \"uint256\"\n" +
         "        }\n" +
         "      ],\n" +
-        "      \"name\": \"zombieToOwner\",\n" +
+        "      \"name\": \"campaignToOwner\",\n" +
         "      \"outputs\": [\n" +
         "        {\n" +
         "          \"name\": \"\",\n" +
@@ -221,7 +221,7 @@ const initBlockchain = async () => {
         "      \"constant\": false,\n" +
         "      \"inputs\": [\n" +
         "        {\n" +
-        "          \"name\": \"_zombieId\",\n" +
+        "          \"name\": \"_campaignId\",\n" +
         "          \"type\": \"uint256\"\n" +
         "        },\n" +
         "        {\n" +
@@ -304,7 +304,7 @@ const initBlockchain = async () => {
         "          \"type\": \"string\"\n" +
         "        }\n" +
         "      ],\n" +
-        "      \"name\": \"createRandomZombie\",\n" +
+        "      \"name\": \"createRandomCampaign\",\n" +
         "      \"outputs\": [],\n" +
         "      \"payable\": false,\n" +
         "      \"stateMutability\": \"nonpayable\",\n" +
@@ -342,7 +342,7 @@ const initBlockchain = async () => {
         "      \"constant\": false,\n" +
         "      \"inputs\": [\n" +
         "        {\n" +
-        "          \"name\": \"_zombieId\",\n" +
+        "          \"name\": \"_campaignId\",\n" +
         "          \"type\": \"uint256\"\n" +
         "        },\n" +
         "        {\n" +
@@ -374,7 +374,7 @@ const initBlockchain = async () => {
         "      \"constant\": false,\n" +
         "      \"inputs\": [\n" +
         "        {\n" +
-        "          \"name\": \"_zombieId\",\n" +
+        "          \"name\": \"_campaignId\",\n" +
         "          \"type\": \"uint256\"\n" +
         "        },\n" +
         "        {\n" +
@@ -451,7 +451,7 @@ const initBlockchain = async () => {
         "      \"inputs\": [\n" +
         "        {\n" +
         "          \"indexed\": false,\n" +
-        "          \"name\": \"zombieId\",\n" +
+        "          \"name\": \"campaignId\",\n" +
         "          \"type\": \"uint256\"\n" +
         "        },\n" +
         "        {\n" +
@@ -465,7 +465,7 @@ const initBlockchain = async () => {
         "          \"type\": \"uint256\"\n" +
         "        }\n" +
         "      ],\n" +
-        "      \"name\": \"NewZombie\",\n" +
+        "      \"name\": \"NewCampaign\",\n" +
         "      \"type\": \"event\"\n" +
         "    },\n" +
         "    {\n" +
