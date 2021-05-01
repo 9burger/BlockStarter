@@ -8,10 +8,10 @@ import "./ownable.sol";
 
 
 
-import getCampaignCount from "../src/utils/getCampaignCount";
+//import getCampaignCount from "../utils/getCampaignCount";
 
 /// TODO: Replace this with natspec descriptions
-contract CampaignOwnership is Ownable, ERC721 {
+contract campaignownership is CampaignAttack, ERC721 {
 
     using SafeMath for uint256;
 
