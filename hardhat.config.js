@@ -21,6 +21,9 @@ module.exports = {
     },
     solidity: "0.5.1",
     networks: {
+        hardhat: {
+            chainId: 1337
+        },
         rinkeby: {
             url: `https://rinkeby.infura.io/v3/${INFURA_PROJECT_ID}`,
             accounts: [`0x${RINKEBY_PRIVATE_KEY}`]

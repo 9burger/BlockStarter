@@ -32,6 +32,7 @@ class App extends Component {
     componentDidMount = async () => {
       try {
           const CZInfo = await initBlockchain(); // from utils directory;  connect to provider and to metamask or other signer
+          console.log(CZInfo);
           await getCampaignCount(CZInfo.CZ, CZInfo.userAddress); // get user count and total count of campaigns
       } catch (error) {
           // Catch any errors for any of the above operations.

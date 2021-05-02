@@ -53,11 +53,11 @@ class CreateCampaign extends Component {
 
 
   render() {
-    let createDisabled = (this.props.userCampaignCount !== 0);
+    // let createDisabled = (this.props.userCampaignCount !== 0 || this.props.userCampaignCount == undefined);
       return (
       <Modal
         trigger={
-          <Button primary disabled={createDisabled} onClick={this.handleOpen}>
+          <Button primary disabled={false} onClick={this.handleOpen}>
             Create campaign
           </Button>
         }

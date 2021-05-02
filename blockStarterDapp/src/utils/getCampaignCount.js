@@ -1,11 +1,11 @@
 import store from "../redux/store";
 
-export const ZOMBIE_COUNT = "ZOMBIE_COUNT"; // action type
+export const CAMPAIGN_COUNT = "CAMPAIGN_COUNT"; // action type
 
 // action creator (dispatch sends this to redux reducer)
 function campaignCount(data) {
   return {
-    type: ZOMBIE_COUNT,
+    type: CAMPAIGN_COUNT,
     payload: data
   };
 }

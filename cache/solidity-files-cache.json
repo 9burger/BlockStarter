@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/BlockStarter.sol": {
-      "lastModificationDate": 1619850054592,
-      "contentHash": "3f0a2a849c993638ae7773f9e6598f30",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\BlockStarter.sol": {
+      "lastModificationDate": 1619907573333,
+      "contentHash": "3b738dc0b9fd238c995247242a7873b2",
       "sourceName": "contracts/BlockStarter.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -37,9 +37,9 @@
         "BlockStarter"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignownership.sol": {
-      "lastModificationDate": 1619900408945,
-      "contentHash": "c122fe7ba2d8d262c59433131b308286",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\campaignownership.sol": {
+      "lastModificationDate": 1619925565656,
+      "contentHash": "0555bcdfdc20c4cb161c388b6df1fe7a",
       "sourceName": "contracts/campaignownership.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -76,9 +76,9 @@
         "CampaignOwnership"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/erc721.sol": {
-      "lastModificationDate": 1619848311693,
-      "contentHash": "7155a007b3daf1b2f3b780fc4769c72c",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\erc721.sol": {
+      "lastModificationDate": 1619907573333,
+      "contentHash": "b4ecebe9371fab09be834ee23a24f40a",
       "sourceName": "contracts/erc721.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -110,9 +110,9 @@
         "ERC721"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/safemath.sol": {
-      "lastModificationDate": 1619848311693,
-      "contentHash": "d389aeacd26877e3954382c22f8a9f6b",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\safemath.sol": {
+      "lastModificationDate": 1619907573334,
+      "contentHash": "04b99660e80b33a909c56628492d7bbc",
       "sourceName": "contracts/safemath.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -146,9 +146,9 @@
         "SafeMath32"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/ownable.sol": {
-      "lastModificationDate": 1619850092716,
-      "contentHash": "dc3caf2e5c7f5201fb684bfef49413a6",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\ownable.sol": {
+      "lastModificationDate": 1619907573334,
+      "contentHash": "381827b52681b37cd56f275ee2c685e3",
       "sourceName": "contracts/ownable.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -180,9 +180,9 @@
         "Ownable"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignattack.sol": {
-      "lastModificationDate": 1619900146952,
-      "contentHash": "944502240f880db3f4198b875d5a89ac",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\campaignattack.sol": {
+      "lastModificationDate": 1619929024770,
+      "contentHash": "ad315311d47c9423c4d5a26a5884231b",
       "sourceName": "contracts/campaignattack.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -216,9 +216,9 @@
         "CampaignAttack"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignHelper.sol": {
-      "lastModificationDate": 1619900327746,
-      "contentHash": "b888dc70c5d7d676d78ec79d69da8772",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\campaignHelper.sol": {
+      "lastModificationDate": 1619907573333,
+      "contentHash": "9cc5d7836fdb0fcca58335cc91dde895",
       "sourceName": "contracts/campaignHelper.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -252,9 +252,9 @@
         "CampaignHelper"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignfeeding.sol": {
-      "lastModificationDate": 1619900291778,
-      "contentHash": "eada1e26955bfddc6b340175544f60d3",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\campaignfeeding.sol": {
+      "lastModificationDate": 1619907573333,
+      "contentHash": "534b30139b78c439c93a924905b3a7fc",
       "sourceName": "contracts/campaignfeeding.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -289,9 +289,9 @@
         "KittyInterface"
       ]
     },
-    "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignfactory.sol": {
-      "lastModificationDate": 1619899962565,
-      "contentHash": "884cc5d8a51cc764280a1a5b4bb942b2",
+    "A:\\Schoolwork\\cs458\\BlockStarter\\contracts\\campaignfactory.sol": {
+      "lastModificationDate": 1619928448514,
+      "contentHash": "c437a395bd9e832a9ffb052c507de683",
       "sourceName": "contracts/campaignfactory.sol",
       "solcConfig": {
         "version": "0.5.1",
