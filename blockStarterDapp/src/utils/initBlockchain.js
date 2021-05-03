@@ -44,7 +44,7 @@ const initBlockchain = async () => {
     let CZ = null;
     console.log("READ ABI");
     //const abi = JSON.parse(CryptoCampaignsContract.abi);
-    const abi = JSON.parse("[\n" +
+   /* const abi = JSON.parse("[\n" +
         "    {\n" +
         "      \"constant\": false,\n" +
         "      \"inputs\": [\n" +
@@ -486,9 +486,9 @@ const initBlockchain = async () => {
         "      \"type\": \"event\"\n" +
         "    }\n" +
         "  ]");
-
+*/
    // CZ = new ethers.Contract('0xf01b5d859b2a73DBE407f4553b06ffF50F19b7e4', abi, signer);
-    CZ = new ethers.Contract('0xB11f26ad0bb7f4705F9eB116c224FFc323798695', abi, signer);
+    CZ = new ethers.Contract('0x5FbDB2315678afecb367f032d93F642f64180aa3', BlockStarterContract.abi, signer);
     // put state data into the REDUX store for easy access from other pages and components
 
     let data = { provider, signer, CZ, userAddress };

@@ -29,5 +29,16 @@ contract CampaignOwnership is CampaignAttack, ERC721 {
         campaignApprovals[_tokenId] = _approved;
         emit Approval(msg.sender, _approved, _tokenId);
     }
+    function _transfer(address _from, address _to, uint256 _tokenId) private {
+        ownerCampaignCount[_to]++;
+        ownerCampaignCount[_from]--;
+        campaignToOwner[_tokenId] = _to;
+        emit Transfer(_from, _to, _tokenId);
+    }
+
+    function transferFrom(address _from, address _to, uint256 _tokenId) external payable {
+        require (campaignToOwner[_tokenId] == msg.sender || campaignApprovals[_tokenId] == msg.sender);
+    _transfer(_from, _to, _tokenId);
+  }
 
 }

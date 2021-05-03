@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/BlockStarter.sol": {
-      "lastModificationDate": 1619850054592,
+      "lastModificationDate": 1619932533582,
       "contentHash": "3f0a2a849c993638ae7773f9e6598f30",
       "sourceName": "contracts/BlockStarter.sol",
       "solcConfig": {
@@ -38,8 +38,8 @@
       ]
     },
     "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignownership.sol": {
-      "lastModificationDate": 1619900408945,
-      "contentHash": "c122fe7ba2d8d262c59433131b308286",
+      "lastModificationDate": 1620010455803,
+      "contentHash": "04fb87d8e85aa5f071d6cee1e46a77b4",
       "sourceName": "contracts/campaignownership.sol",
       "solcConfig": {
         "version": "0.5.1",
@@ -181,7 +181,7 @@
       ]
     },
     "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignattack.sol": {
-      "lastModificationDate": 1619900146952,
+      "lastModificationDate": 1619932533582,
       "contentHash": "944502240f880db3f4198b875d5a89ac",
       "sourceName": "contracts/campaignattack.sol",
       "solcConfig": {
@@ -217,7 +217,7 @@
       ]
     },
     "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignHelper.sol": {
-      "lastModificationDate": 1619900327746,
+      "lastModificationDate": 1619932533582,
       "contentHash": "b888dc70c5d7d676d78ec79d69da8772",
       "sourceName": "contracts/campaignHelper.sol",
       "solcConfig": {
@@ -253,7 +253,7 @@
       ]
     },
     "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignfeeding.sol": {
-      "lastModificationDate": 1619900291778,
+      "lastModificationDate": 1619932533582,
       "contentHash": "eada1e26955bfddc6b340175544f60d3",
       "sourceName": "contracts/campaignfeeding.sol",
       "solcConfig": {
@@ -290,8 +290,8 @@
       ]
     },
     "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignfactory.sol": {
-      "lastModificationDate": 1619899962565,
-      "contentHash": "884cc5d8a51cc764280a1a5b4bb942b2",
+      "lastModificationDate": 1620010472107,
+      "contentHash": "848a4cbcdfca809a0575ab09d7f60631",
       "sourceName": "contracts/campaignfactory.sol",
       "solcConfig": {
         "version": "0.5.1",

@@ -46,7 +46,7 @@ contract CampaignFactory is Ownable {
     }
 
     function createRandomCampaign(string memory _name) public {
-        require(ownerCampaignCount[msg.sender] == 0);
+        //require(ownerCampaignCount[msg.sender] == 0);
         uint randDna = _generateRandomDna(_name);
         randDna = randDna - randDna % 100;
         _createCampaign(_name, randDna);

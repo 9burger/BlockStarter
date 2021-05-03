@@ -9,10 +9,10 @@ async function main() {
 
     console.log("Account balance:", (await deployer.getBalance()).toString());
 
-    const CZF = await ethers.getContractFactory("CryptoZombies");
+    const CZF = await ethers.getContractFactory("BlockStarter");
     const CZ = await CZF.deploy();
 
-    console.log("CryptoZombies contract address:", CZ.address);
+    console.log("BlockStarter contract address:", CZ.address);
 }
 
 main()

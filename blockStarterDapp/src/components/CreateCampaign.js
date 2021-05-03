@@ -53,11 +53,11 @@ class CreateCampaign extends Component {
 
 
   render() {
-    let createDisabled = (this.props.userCampaignCount !== 0);
+   
       return (
       <Modal
         trigger={
-          <Button primary disabled={createDisabled} onClick={this.handleOpen}>
+          <Button primary disabled={false} onClick={this.handleOpen}>
             Create campaign
           </Button>
         }
@@ -66,13 +66,13 @@ class CreateCampaign extends Component {
       >
         <Header icon="browser" content="Create a New campaign" />
         <Modal.Content>
-          <img src="static/images/zombieWarrior.jpg" alt="campaign warrior" /><Header>Be sure to give your campaign a WORTHY name!!!</Header>
+          <img src="static/images/Contract.jpeg" alt="Contract.jpeg could not be found" /><Header>Name Your Campaign Below:</Header>
           <br /> <br />
           <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
             <Form.Field>
-              <label>campaign Name</label>
+              <label>Campaign Name:</label>
               <input
-                placeholder="Name"
+                placeholder="myCampaign"
                 onChange={event =>
                   this.setState({
                     value: event.target.value
