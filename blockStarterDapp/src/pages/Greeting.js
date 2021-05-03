@@ -17,7 +17,7 @@ class Greeting extends Component {
           Welcome to <b> BlockStarter! </b>
         </h2>
         <br />
-        <img src="static/images/zombieLoser2.jpg" style={imgStyle} width="400px" alt="Zombie rising from grave" />
+        <img src="static/images/CoverBlock.jpg" style={imgStyle} width="400px" alt="Technobabble Blocks" />
         <br /> <br />
         <p style={{ textAlign: "center" }}>
           This Project by Sawyer, Max, and Moise allows the user to create or fund fundraisers annonymously

@@ -66,7 +66,7 @@ class CreateCampaign extends Component {
       >
         <Header icon="browser" content="Create a New campaign" />
         <Modal.Content>
-          <img src="static/images/zombieWarrior.jpg" alt="campaign warrior" /><Header>Be sure to give your campaign a WORTHY name!!!</Header>
+          <img src="static/images/Contract.jpeg" alt="Fundraising contract" /><Header>Be sure to give your campaign a WORTHY name!!!</Header>
           <br /> <br />
           <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
             <Form.Field>
