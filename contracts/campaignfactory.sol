@@ -51,5 +51,8 @@ contract CampaignFactory is Ownable {
         randDna = randDna - randDna % 100;
         _createCampaign(_name, randDna);
     }
+     function totalSupply() external view returns (uint256) {
+        return campaigns.length;
+    }
 
 }

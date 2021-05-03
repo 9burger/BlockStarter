@@ -290,8 +290,8 @@
       ]
     },
     "/home/moose970/Documents/workspace/Classes/CS458Blockchain/BlockStarter/contracts/campaignfactory.sol": {
-      "lastModificationDate": 1620010472107,
-      "contentHash": "848a4cbcdfca809a0575ab09d7f60631",
+      "lastModificationDate": 1620013804107,
+      "contentHash": "68c4a1893636f85f0c721e54d2e13f07",
       "sourceName": "contracts/campaignfactory.sol",
       "solcConfig": {
         "version": "0.5.1",
