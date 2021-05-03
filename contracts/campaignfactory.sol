@@ -55,4 +55,8 @@ contract CampaignFactory is Ownable {
     function totalSupply() external view returns (uint256) {
         return campaigns.length;
     }
+
+    function getCampaign(uint index) external view returns (string memory name, uint dna, uint32 level, uint32 readyTime, uint16 winCount, uint16 lossCount) {
+        return (campaigns[index].name, campaigns[index].dna, campaigns[index].level, campaigns[index].readyTime, campaigns[index].winCount, campaigns[index].lossCount);
+    }
 }
