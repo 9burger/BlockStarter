@@ -16,6 +16,7 @@ contract CampaignOwnership is CampaignAttack, ERC721 {
     using SafeMath for uint256;
 
     mapping (uint => address) campaignApprovals;
+    uint256 totalCampaigns;
 
     function balanceOf(address _owner) external view returns (uint256) {
         return ownerCampaignCount[_owner];
@@ -42,7 +43,4 @@ contract CampaignOwnership is CampaignAttack, ERC721 {
         emit Approval(msg.sender, _approved, _tokenId);
     }
 
-    function totalSupply() external view returns (uint256) {
-        
-    }
 }
